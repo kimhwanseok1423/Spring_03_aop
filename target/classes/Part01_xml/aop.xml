@@ -15,8 +15,15 @@
 <!--  aspect: 공통관심사항을 나타내는 추상명사 -->
  <aop:config>
 <aop:aspect ref="common">
+<!-- 
 <aop:before method="comm1" pointcut="execution(public void Part01_xml.Service.prn1())"/>
 
+<aop:before method="comm1" pointcut="execution(public void Part01_xml.Service.prn1(int))"/> 
+<aop:before method="comm1" pointcut="execution(public void Part01_xml.Service.prn1(java.util.Random))"/> 
+<aop:before method="comm1" pointcut="execution(public void Part01_xml.Service.prn1(int,int))"/> 
+<aop:before method="comm1" pointcut="execution(* Part01_xml.Service.prn1(*))"/> 
+<aop:before method="comm1" pointcut="execution(* Part01_xml.Service.prn1(*,*))"/> --> 
+<aop:before method="comm1" pointcut="execution(* Part01_xml.Service.prn1(..))"/> 
 </aop:aspect>
 </aop:config>
 

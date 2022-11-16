@@ -10,25 +10,24 @@ public class ServiceImp implements Service{
 
 	@Override
 	public void prn1() {
-		// TODO Auto-generated method stub
-		
+	System.out.println("prn");
 	}
 
 	@Override
 	public void prn1(int x) {
-		// TODO Auto-generated method stub
+		System.out.println("x:"+x);
 		
 	}
 
 	@Override
 	public void prn1(Random ran) {
-		// TODO Auto-generated method stub
+		System.out.println(ran.nextDouble());
 		
 	}
 
 	@Override
 	public void prn1(int a, int b) {
-		// TODO Auto-generated method stub
+		System.out.printf("a=%d, b=%d\n", a,b);
 		
 	}
 

@@ -1,5 +1,7 @@
 package Part01_xml;
 
+import java.util.Random;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -14,6 +16,9 @@ public class SpringTest {
 		
 		svc=(Service) context.getBean("svc");
 		svc.prn1();
+		svc.prn1(10);
+		svc.prn1(new Random());
+		svc.prn1(20,30);
 
 	}
 
